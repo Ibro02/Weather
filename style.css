@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Oswald&family=Roboto+Condensed:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Oswald&family=Roboto+Condensed:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500;700&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Oswald&family=Roboto+Condensed:wght@300;400&family=Varela+Round&display=swap");
+* {
+  text-align: center;
+}
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-image: linear-gradient(
+    to right top,
+    #00e1ff,
+    #00b0ef,
+    #007fd9,
+    #004cb7,
+    #001084
+  );
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.api {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 0 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(228, 228, 228);
+  font-size: 2vw;
+  border-radius: 20px;
+}
+#city {
+  font-family: "Oswald";
+  font-weight: 700;
+}
+.api h2 {
+  margin: 5px;
+  font-family: "Arimo";
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#deg {
+  font-family: "Varela Round";
+  font-weight: 400;
+}
+.degree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.degree h2 {
+  font-family: "Varela Round";
+  font-weight: 400;
+}
+#icona {
+  box-sizing: border-box;
+  height: 8vw;
+  width: 8vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: rgba(184, 184, 184, 0.425);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 641px) {
+  html {
+    margin: 0;
+  }
+  .api {
+    font-size: 7vw;
+  }
+  #icona {
+    height: 20vw;
+    width: 20vw;
+  }
+}
